@@ -1,4 +1,5 @@
 
+
 Custom animation transition manager and base VC for iOS apps. 
 
 ##Use:  
@@ -8,8 +9,10 @@ Custom animation transition manager and base VC for iOS apps.
 3. Subclass whatever view controller you are making from JHBaseViewController
 4. In viewDidLoad add the following lines of code with whatever transition type you want. This will determine the animations that will be used.
 ```objective-c
-	[[JHTransitionContextManager sharedInstance] setNavigationTransitionType:JHNavigationTransitionTypeZoom];
-    [[JHTransitionContextManager sharedInstance] setModalTransitionType:JHModalTransitionTypePullBack];
+// replace with another JHNavigationTransitionType for custom navigation transition
+[[JHTransitionContextManager sharedInstance] setNavigationTransitionType:JHNavigationTransitionTypeDefault];
+// replace with another JHModalTransitionType for custom modal transition
+[[JHTransitionContextManager sharedInstance] setModalTransitionType:JHModalTransitionTypeDefault];
 ```
 5. Push, Pop, Present and Dismiss like you normally would!
 
@@ -41,6 +44,16 @@ Also override:
 }
 ```
 to set the animation duration. 
+
+##Built-in Transitions
+
+#####Navigation:
++ JHNavigationTransitionTypeZoom
++ JHNavigationTransitionTypeDropDown
+
+#####Modal:
++ JHModalTransitionTypeBounceUp
++ JHModalTransitionTypePullBack
 
 ##Moving Forward:  
 
