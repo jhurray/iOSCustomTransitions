@@ -8,6 +8,7 @@ Custom animation transition manager and base VC for iOS apps.
 2. Add files to your XCode project (make sure you delete the README.md file)
 3. Subclass whatever view controller you are making from JHBaseViewController
 4. In viewDidLoad add the following lines of code with whatever transition type you want. This will determine the animations that will be used.
+
 ```objective-c
 // replace with another JHNavigationTransitionType for custom navigation transition
 [[JHTransitionContextManager sharedInstance] setNavigationTransitionType:JHNavigationTransitionTypeDefault];
