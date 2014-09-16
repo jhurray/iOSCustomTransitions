@@ -1,21 +1,21 @@
 //
-//  TransitionManager.m
+//  JHTransitionManager.m
 //  CustomViewControllerTransitionsExample
 //
 //  Created by Jeff Hurray on 9/4/14.
 //  Copyright (c) 2014 jhurray. All rights reserved.
 //
 
-#import "TransitionManager.h"
+#import "JHTransitionManager.h"
 
 #define TRANSITION_DURATION 1.0
 
-@interface TransitionManager()
+@interface JHTransitionManager()
 
 @end
 
 
-@implementation TransitionManager
+@implementation JHTransitionManager
 
 @synthesize transitionType;
 

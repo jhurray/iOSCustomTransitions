@@ -1,20 +1,20 @@
 //
-//  ZoomNavigationTransitionManager.m
+//  JHZoomNavigationTransitionManager.m
 //  CustomViewControllerTransitionsExample
 //
 //  Created by Jeff Hurray on 9/11/14.
 //  Copyright (c) 2014 jhurray. All rights reserved.
 //
 
-#import "ZoomNavigationTransitionManager.h"
+#import "JHZoomNavigationTransitionManager.h"
 
-@interface ZoomNavigationTransitionManager()
+@interface JHZoomNavigationTransitionManager()
 
 
 @end
 
 
-@implementation ZoomNavigationTransitionManager
+@implementation JHZoomNavigationTransitionManager
 
 
 -(void)animatePresentTransitionFrom:(UIViewController *)fromVC to:(UIViewController *)toVC withTransitionContext:(id<UIViewControllerContextTransitioning>)transitionContext {

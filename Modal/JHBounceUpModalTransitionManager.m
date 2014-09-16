@@ -1,21 +1,21 @@
 //
-//  BounceUpModalTransitionManager.m
+//  JHBounceUpModalTransitionManager.m
 //  CustomViewControllerTransitionsExample
 //
 //  Created by Jeff Hurray on 9/8/14.
 //  Copyright (c) 2014 jhurray. All rights reserved.
 //
 
-#import "BounceUpModalTransitionManager.h"
+#import "JHBounceUpModalTransitionManager.h"
 
-@interface BounceUpModalTransitionManager()
+@interface JHBounceUpModalTransitionManager()
 
 @property (nonatomic, strong) UIView *coverView;
 @property (nonatomic, strong) NSArray *constraints;
 
 @end
 
-@implementation BounceUpModalTransitionManager
+@implementation JHBounceUpModalTransitionManager
 
 -(void)animatePresentTransitionFrom:(UIViewController *)fromVC to:(UIViewController *)toVC withTransitionContext:(id<UIViewControllerContextTransitioning>)transitionContext {
     

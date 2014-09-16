@@ -1,5 +1,5 @@
 //
-//  TransitionManager.h
+//  JHTransitionManager.h
 //  CustomViewControllerTransitionsExample
 //
 //  Created by Jeff Hurray on 9/4/14.
@@ -16,7 +16,7 @@ typedef NS_ENUM(NSUInteger, TransitionType) {
     TransitionTypeDismiss
 };
 
-@interface TransitionManager : NSObject <UIViewControllerAnimatedTransitioning>
+@interface JHTransitionManager : NSObject <UIViewControllerAnimatedTransitioning>
 
 @property (nonatomic, assign) TransitionType transitionType;
 

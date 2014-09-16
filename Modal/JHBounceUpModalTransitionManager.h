@@ -1,13 +1,13 @@
 //
-//  BounceUpModalTransitionManager.h
+//  JHBounceUpModalTransitionManager.h
 //  CustomViewControllerTransitionsExample
 //
 //  Created by Jeff Hurray on 9/8/14.
 //  Copyright (c) 2014 jhurray. All rights reserved.
 //
 
-#import "ModalTransitionManager.h"
+#import "JHModalTransitionManager.h"
 
-@interface BounceUpModalTransitionManager : ModalTransitionManager
+@interface JHBounceUpModalTransitionManager : JHModalTransitionManager
 
 @end

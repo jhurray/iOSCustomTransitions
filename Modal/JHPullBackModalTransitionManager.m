@@ -1,18 +1,18 @@
 //
-//  PullBackModalTransitionManager.m
+//  JHPullBackModalTransitionManager.m
 //  CustomViewControllerTransitionsExample
 //
 //  Created by Jeff Hurray on 9/11/14.
 //  Copyright (c) 2014 jhurray. All rights reserved.
 //
 
-#import "PullBackModalTransitionManager.h"
+#import "JHPullBackModalTransitionManager.h"
 
-@interface PullBackModalTransitionManager()
+@interface JHPullBackModalTransitionManager()
 
 @end
 
-@implementation PullBackModalTransitionManager
+@implementation JHPullBackModalTransitionManager
 
 -(void)animatePresentTransitionFrom:(UIViewController *)fromVC to:(UIViewController *)toVC withTransitionContext:(id<UIViewControllerContextTransitioning>)transitionContext {
 

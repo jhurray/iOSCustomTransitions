@@ -1,14 +1,14 @@
 //
-//  DropDownNavigationTransitionManager.m
+//  JHDropDownNavigationTransitionManager.m
 //  CustomViewControllerTransitionsExample
 //
 //  Created by Jeff Hurray on 9/11/14.
 //  Copyright (c) 2014 jhurray. All rights reserved.
 //
 
-#import "DropDownNavigationTransitionManager.h"
+#import "JHDropDownNavigationTransitionManager.h"
 
-@implementation DropDownNavigationTransitionManager
+@implementation JHDropDownNavigationTransitionManager
 
 -(void)animatePresentTransitionFrom:(UIViewController *)fromVC to:(UIViewController *)toVC withTransitionContext:(id<UIViewControllerContextTransitioning>)transitionContext {
     CGSize screenSize = [[UIScreen mainScreen]bounds].size;

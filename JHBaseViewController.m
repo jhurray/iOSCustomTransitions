@@ -1,19 +1,19 @@
 //
-//  BaseViewController.m
+//  JHBaseViewController.m
 //  CustomViewControllerTransitionsExample
 //
 //  Created by Jeff Hurray on 9/8/14.
 //  Copyright (c) 2014 jhurray. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "JHBaseViewController.h"
 
-@interface BaseViewController ()
+@interface JHBaseViewController ()
 
 
 @end
 
-@implementation BaseViewController
+@implementation JHBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,22 +45,22 @@
 
 -(id <UIViewControllerAnimatedTransitioning>) animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     
-    ModalTransitionManager *modalTransitionManager = [[TransitionContextManager sharedInstance] modalTransitionManager];
-    modalTransitionManager.transitionType = TransitionTypePresent;
-    return modalTransitionManager;
+    JHModalTransitionManager *JHModalTransitionManager = [[JHTransitionContextManager sharedInstance] modalTransitionManager];
+    JHModalTransitionManager.transitionType = TransitionTypePresent;
+    return JHModalTransitionManager;
 }
 
 -(id <UIViewControllerAnimatedTransitioning>) animationControllerForDismissedController:(UIViewController *)dismissed{
-    ModalTransitionManager *modalTransitionManager = [[TransitionContextManager sharedInstance] modalTransitionManager];
-    modalTransitionManager.transitionType = TransitionTypeDismiss;
-    return modalTransitionManager;
+    JHModalTransitionManager *JHModalTransitionManager = [[JHTransitionContextManager sharedInstance] modalTransitionManager];
+    JHModalTransitionManager.transitionType = TransitionTypeDismiss;
+    return JHModalTransitionManager;
 }
 
 # pragma mark NAVIGATION TRANSITIONS
 
 -(id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
     
-    NavigationTransitionManager *navTransitionManager = [[TransitionContextManager sharedInstance] navigationTransitionManager];
+    JHNavigationTransitionManager *navTransitionManager = [[JHTransitionContextManager sharedInstance] navigationTransitionManager];
     switch (operation) {
         case UINavigationControllerOperationPush:
             navTransitionManager.transitionType = TransitionTypePresent;
